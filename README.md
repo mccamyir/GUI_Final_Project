@@ -6,10 +6,8 @@ View: MainPage, SuggestionsPage, and AboutPage
 ViewModel: FortunaViewModel and CetusViewModel
 Model: FortunaAPI and CetusAPI
 
-*Anthony Hackworth: API and Json implementation and debugging, as well as countdown timer and Day/Night & Warm/Cold swapping logic; seperation of ViewModel/Model Code
-
-*Ian McCamy: General page layout and design; About and Suggestion Page; Suggestions Page logic; seperation of View/ViewModel Code
-
-*Both: General fixes, Testing
+* __Anthony Hackworth__: API and Json implementation and debugging, as well as countdown timer and Day/Night & Warm/Cold swapping logic; seperation of ViewModel/Model Code
+* __Ian McCamy__: General page layout and design; About and Suggestion Page; Suggestions Page logic; seperation of View/ViewModel Code
+* __Both__: General fixes, Testing
 
 Overall, 50/50
