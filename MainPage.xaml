@@ -1,0 +1,63 @@
+﻿<Page
+    x:Class="GUI_Final_Project.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GUI_Final_Project"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="560" Width="1000">
+
+    <Grid>
+        <Image x:Name="backGround" HorizontalAlignment="Left" Width="1000" Source="../Assets/Background1.png" Stretch="Fill" Height="560" VerticalAlignment="Center"/>
+        <Image x:Name="solarisU" Source="../Assets/SolarisUnited.png" Stretch="UniformToFill" Margin="841,29,28,397" />
+        <Image x:Name="Ostron" Source="../Assets/OstronSigil.png" Stretch="UniformToFill" Margin="0,0,831,397" />
+
+        <StackPanel Margin="120,0,513,0" Height="143" VerticalAlignment="Center">
+            <StackPanel.Background>
+                <AcrylicBrush TintColor="#0CEBFF03"/>
+            </StackPanel.Background>
+            <TextBlock x:Name="nextEarthCycle" Margin="0,0,10,0" Text="Time Left In Night Cycle:" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="229" FontSize="20" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" Height="43">
+                <TextBlock x:Name="earthHourInt" Text="0" TextWrapping="Wrap" Height="43" FontSize="20" VerticalAlignment="Top" Margin="135,0,0,0" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+                <TextBlock Text="h" TextWrapping="Wrap" Height="43" FontSize="20" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+                <TextBlock x:Name="earthMinuteInt" Text="0" TextWrapping="Wrap" Height="43" FontSize="20" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+                <TextBlock Text="m" TextWrapping="Wrap" Height="43" FontSize="20" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+                <TextBlock x:Name="earthSecondInt" Text="0" TextWrapping="Wrap" Height="43" FontSize="20" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+                <TextBlock Text="s" TextWrapping="Wrap" Height="43" FontSize="20" VerticalAlignment="Top" FontFamily="Baskerville Old Face" FontWeight="Bold"/>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" Text="Day Cycle Is 1 Hour, 40 Minutes long." FontSize="20" Width="331" FontFamily="Baskerville Old Face"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,0" TextWrapping="Wrap" VerticalAlignment="Bottom" Text="Night Cycle Is 30 Minutes long." FontSize="20" FontFamily="Baskerville Old Face"/>
+        </StackPanel>
+        <StackPanel Margin="514,0,105,0" Height="150" VerticalAlignment="Center">
+            <StackPanel.Background>
+                <AcrylicBrush TintColor="#33D900FF"/>
+            </StackPanel.Background>
+            <TextBlock x:Name="nextFortunaCycle" TextWrapping="Wrap" Height="40" Width="228" FontSize="20" Foreground="Black" FontFamily="Agency FB" TextAlignment="Center" FontWeight="Bold" FocusVisualSecondaryBrush="#99FFFFFF" FocusVisualPrimaryBrush="Black"><Run Text="Time Left in Warm Cycle:"/></TextBlock>
+            <StackPanel Orientation="Horizontal" Height="43" Width="344">
+                <TextBlock x:Name="fortunaMinuteInt" Margin="150,0,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="41" FontFamily="Agency FB" FontWeight="Bold"/>
+                <TextBlock Margin="0,0,0,0" Text="m" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="41" FontFamily="Agency FB" FontWeight="Bold"/>
+                <TextBlock x:Name="fortunaSecondInt" Margin="0,0,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="41" FontFamily="Agency FB" FontWeight="Bold"/>
+                <TextBlock Margin="0,0,0,0" Text="s" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20" Height="41" FontFamily="Agency FB" FontWeight="Bold"/>
+
+            </StackPanel>
+            <TextBlock TextWrapping="Wrap" VerticalAlignment="Top" Text="Warm Cycle is 6 Minutes, 40 Seconds long." FontSize="20" HorizontalAlignment="Center" FontFamily="Agency FB"/>
+            <TextBlock TextWrapping="Wrap" Text="Cold Cycle is 20 Minutes long." FontSize="20" HorizontalAlignment="Center" FontFamily="Agency FB"/>
+        </StackPanel>
+
+        <Button x:Name="abtButton" Click="abtButton_Click" Margin="0,0,900,0" Height="100" HorizontalAlignment="Right" Width="100">
+            <Image Source="../Assets/ButtonTemplateLeft.png" Stretch="UniformToFill"/>
+            <ToolTipService.ToolTip>
+                <ToolTip Content="About" 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+        </Button>
+        <Button x:Name="randFrameButton" Click="randFrameButton_Click" Height="100" HorizontalAlignment="Right" Width="100">
+            <Image Source="../Assets/ButtonTemplateRight.png" Stretch="UniformToFill"/>
+            <ToolTipService.ToolTip>
+                <ToolTip Content="Random Warframe" 
+                 HorizontalOffset="20" VerticalOffset="30"/>
+            </ToolTipService.ToolTip>
+        </Button>
+    </Grid>
+</Page>
